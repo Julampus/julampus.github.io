@@ -31,20 +31,3 @@ gem "wdm", "~> 0.1", :platforms => [:mingw, :x64_mingw, :mswin]
 # Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
 # do not have a Java counterpart.
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
-
-gem "github-pages", group: :jekyll_plugins
-
-collections:
-  photos:
-    # `output: true` means Jekyll will generate an HTML page for each photo
-    # This is great if you want a dedicated page for each photo with comments/details.
-    output: true 
-    
-    # You can set a custom permalink structure for your photo pages
-    permalink: /gallery/:title/
-
-# Theme settings (optional, but good practice)
-remote_theme: pages-themes/minimal@v0.2.0
-plugins:
-- jekyll-remote-theme
-- jekyll-seo-tag
