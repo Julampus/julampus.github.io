@@ -33,7 +33,6 @@ gem "wdm", "~> 0.1", :platforms => [:mingw, :x64_mingw, :mswin]
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 gem "github-pages", group: :jekyll_plugins
-gem "jekyll-remote-theme"
 
 collections:
   photos:
@@ -49,4 +48,3 @@ remote_theme: pages-themes/minimal@v0.2.0
 plugins:
 - jekyll-remote-theme
 - jekyll-seo-tag
-
