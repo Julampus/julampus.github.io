@@ -12,21 +12,27 @@
     body {
       color:#F1F8F1;
       background-color: #343a35;
+      margin: 20px 50px 20px 50px;
     }
     h1 {
       font-family: Cambria, serif;
       font-size: 30px;
+      margin: 0;
     }
-    p {
-      font-family: "Gill Sans", sans-serif;
-      font-size: 20px;
+    .header {
+      display: flex;
+      flex-direction: column;
     }
-    ul {
-      list-style-type: none; 
-      margin: 0; 
-      padding: 0; 
-      overflow: hidden; 
-      background-color: #383838;
+    .header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar ul {
+      list-style-type: none;
+      padding: 10px 0 0 0;
+      display: flex;
+      gap: -5rem;
     }
     ul li {
       float: right;
@@ -35,32 +41,40 @@
       display: block;
       color: #F1F8F1;
       text-align: center;
-      padding: 14px 16px;
+      padding: 0px 16px;
       text-decoration: none;
     }
     ul li a:hover {
-      color: #77966D;
+      color: #acd79c;
     }
+
   </style>
 </head>
   
 <body>
+<!-- Header Group -->
   <div class="header">
-    <h1 style="text-align: left">Juniper S. Setterberg</h1>
-    <div class="navbar">
-      <ul>
-        <li><a href="/julampus/pages/about/">about</a></li>
-        <li><a href="/julampus/pages/research/">research</a></li>
-        <li><a href="/julampus/pages/cv/">cv</a></li>
-        <li><a href="/julampus/pages/personal/">personal</a></li>
-      </ul>
+    <div class="header-row">
+      <h1 style="text-align: left">Juniper S. Setterberg</h1>
+      <!-- Navigation Bar -->
+      <div class="navbar">
+        <ul>
+          <li><a href="/julampus/pages/cv/index.html">cv</a></li>
+          <li><a href="/julampus/pages/research/index.html">research</a></li>
+          <li><a href="/julampus/pages/personal/index.html">personal</a></li>
+          <li><a href="/julampus/pages/about/index.html">about</a></li>
+        </ul>
+      </div>
     </div>
-    <hr>
-    
   </div>
-  <div id='intro' style="text-align: justify">
-    <p> Juniper Setterberg is an undergraduate student at Barnard College interested in Philosophy and Biology.</p>
-    <p> She is currently working with the Axel Lab at Columbia University's Zuckerman Institute in order to characterize the mating behaviors of the dwarf cuttlefish.</p>
-    </div>
+  
+  <hr>
+<!-- Intro Text -->
+  <div id='intro' style="text-align: justify; margin: 0 100px 0 100px;">
+    <p> Juniper Setterberg is an undergraduate student at Barnard College
+        interested in Philosophy and Biology. She is currently working 
+        with the Axel Lab at Columbia University's Zuckerman Institute 
+        in order to characterize the mating behaviors of the dwarf cuttlefish.</p>
+  </div>
 </body>
 </html>
