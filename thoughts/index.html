@@ -83,8 +83,6 @@
       font-size: 14px;
       margin: 0 100px 0 100px;
     }
-      margin: 0;
-    }
     ul li {
       float: right;
     }
@@ -115,7 +113,20 @@
       font-weight: normal;
       margin: 0;
     }
-
+    .link-to-thought {
+      text-decoration: none;
+      color:#acd79c;
+    }
+    .link-to-thought:hover {
+      color: #d4efca;
+    }
+    .list-of-thoughts {
+      list-style-type:circle;
+      margin: 0 0 0 100px;
+      display: flex;
+      text-align: left;
+      gap: 0.5rem;
+    }
   </style>
 </head>
   
@@ -123,7 +134,7 @@
 <!-- Header Group -->
   <div class="header">
     <div class="header-row">
-      <h1 style="text-align: left"><a href="/">Juniper S. Setterberg</a></h1>
+      <h1 style="text-align: left; font-size: 20px"><a href="/" style="font-size: 20px">Juniper S. Setterberg</a></h1>
       <!-- Navigation Bar -->
       <div class="navbar">
         <ul>
@@ -140,19 +151,19 @@
   
   <hr>
 
-  <main>
-    <h2>Thoughts</h2>
-
+  <h2>Thoughts</h2>
 <!-- 
   
 EDITS GO HERE
 
 -->
-    <div class="blog-post">
-      <p class="blog-date">May 13th, 2026</p>
-      <p class="blog-title"><a class="blog-title-link" href="/thoughts/2026-06-13.html">Your sexuality is your choice</a></p>
-      <p class="blog-description">A reflection on the death of 1980's feminist philosophy and a subsequent attempt to resusitate the dead.</p>
-    </div>
+  <h3 style="margin: 0 0 0 125px">Lists</h3>
+  <ul class="list-of-thoughts" style="list-style-type:none;">
+    <p><b>></b><a class="link-to-thought" href="/thoughts/reading-list.html"> Reading list</a></p>
+    <p><b>></b><a class="link-to-thought" href="/thoughts/watch-list.html"> Watch list</a></p>
+    <p><b>></b><a class="link-to-thought" href="/thoughts/music-list.html"> Music list</a></p>
+  </ul>
+  </ul>
   </main>
 
   <div class="page-footer">
