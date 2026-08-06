@@ -4,18 +4,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Juniper Setterberg is an undergraduate student at Barnard College interested in Philosophy and Biology.">
-  <meta canonical=href="https://julampus.github.io/julampus/pages/about/">
   
-  <title> Juniper Setterberg</title>
+  <title> Juniper Setterberg | About </title>
   
   <style>
     body {
       color:#F1F8F1;
       background-color: #343a35;
       margin: 20px 50px 20px 50px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-size: 16px;
+      font-family: Cambria, serif;
+    }
+    p a{
+      color: #acd79c;
+      text-decoration: none;
+    }
+    p a:hover {
+      color: #d4efca;
     }
     h1 a {
-      font-family: Cambria, serif;
       font-size: 30px;
       margin: 0;
       text-decoration: none;
@@ -33,11 +43,24 @@
       justify-content: space-between;
       align-items: center;
     }
+    hr,
+    h2 {
+      margin: .5rem 0;
+    }
+    hr {
+      border: 0;
+      border-top: 1px solid #F1F8F1;
+      width: 100%;
+    }
     .navbar ul {
       list-style-type: none;
       padding: 10px 0 0 0;
       display: flex;
       gap: -5rem;
+    }
+    h2 {
+      text-align: center;
+      font-style: oblique; 
     }
     ul li {
       float: right;
@@ -52,6 +75,23 @@
     ul li a:hover {
       color: #acd79c;
     }
+    main {
+      flex: 1;
+    }
+    .page-footer {
+      margin-top: auto;
+    }
+    footer {
+      color: #9ea99e;
+      padding: 0 50px 20px 50px;
+      display: flex;
+      justify-content: space-between;
+    }
+    footer p {
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+    }
 
   </style>
 </head>
@@ -60,26 +100,40 @@
 <!-- Header Group -->
   <div class="header">
     <div class="header-row">
-      <h1 style="text-align: left"><a href="/julampus/">Juniper S. Setterberg</a></h1>
+      <h1 style="text-align: left"><a href="/">Juniper S. Setterberg</a></h1>
       <!-- Navigation Bar -->
       <div class="navbar">
         <ul>
-          <li><a href="/cv/">cv</a></li>
-          <li><a href="/research/">research</a></li>
-          <li><a href="/personal/">personal</a></li>
-          <li><a href="/">about</a></li>
+          <li float="right"><a href="/">about</a></li>
+          <li float="right"><a href="/thoughts/">thoughts</a></li>
+          <li float="right"><a href="/writing/">writing</a></li>
+          <li float="right"><a href="/photos/">photos</a></li>
+          <li float="right"><a href="/research/">research</a></li>
+          <li float="right"><a href="/cv/cv_juniper_setterberg.pdf">cv</a></li>
         </ul>
       </div>
     </div>
   </div>
   
   <hr>
+
+  <main>
+    <h2> About </h2>
 <!-- Intro Text -->
-  <div id='intro' style="text-align: justify; margin: 0 100px 0 100px;">
-    <p> Juniper Setterberg is an undergraduate student at Barnard College
-        interested in Philosophy and Biology. She is currently working 
-        with the Axel Lab at Columbia University's Zuckerman Institute 
-        in order to characterize the mating behaviors of the dwarf cuttlefish.</p>
+    <div id='intro' style="text-align: justify; padding: 0 50px 0 50px;">
+          <img src="/images/juniper.png" alt="A lone juniper tree leaning on a cliffside" style="float:left; width: 400px; height: 400px; margin: 0 20px 20px 0;">
+      <p style="font-size: 20px";> <b>Juniper Setterberg </b> is an undergraduate student at Barnard College
+          interested in philosophy and biology. She is currently working 
+          with the <a href="https://www.axellab.columbia.edu/">Axel Lab</a> at Columbia University's <i>Zuckerman Institute</i>. Her research revolves around characterizing mating behaviors of the dwarf cuttlefish <i>Ascarosepion bandense</i>. Apart from her academic interests, Juniper is a classically trained cellist, predominantly performing early 20th century pieces.</p>
+    </div>
+  </main>
+
+  <div class="page-footer">
+    <hr>
+    <footer>
+      <p> © 2026 Juniper Setterberg </p>
+      <p><a href="mailto:jss2330@barnard.edu" style="color:#9ea99e;">jss2330@barnard.edu</a></p>
+    </footer>
   </div>
 </body>
 </html>
