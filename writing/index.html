@@ -51,9 +51,47 @@
     h2 {
       margin: .5rem 0;
     }
+    .page-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 100px 0 100px;
+    }
+    .page-heading h2 {
+      text-align: left;
+      margin: 0;
+    }
     h2 {
       text-align: center;
       font-style: oblique; 
+    }
+    .blog-post {
+      margin: 0 100px 0 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.2rem;
+    }
+    .blog-date {
+      font-style: oblique;
+      font-size: 14px;
+      color: #9ea99e;
+      margin: 0 100px 0 100px;
+    }
+    .blog-title {
+      font-size: 18px;
+      margin: 0 100px 0 100px;
+    }
+    a.blog-title-link {
+      text-decoration: none;
+      color: #acd79c;
+    }
+    a.blog-title-link:hover {
+      color: #d4efca;
+    }
+    .blog-description {
+      font-size: 14px;
+      margin: 0 100px 0 100px;
     }
     ul li {
       float: right;
@@ -93,7 +131,7 @@
 <!-- Header Group -->
   <div class="header">
     <div class="header-row">
-      <h1 style="text-align: left"><a href="/">Juniper S. Setterberg</a></h1>
+      <h1 style="text-align: left; font-size: 20px"><a href="/" style="font-size: 20px">Juniper S. Setterberg</a></h1>
       <!-- Navigation Bar -->
       <div class="navbar">
         <ul>
@@ -110,8 +148,12 @@
   
   <hr>
   <main>
-    <h1 style="text-align: center;"> ////////// UNDER CONSTRUCTION ////////// </h1>
-    <p style="text-align: center;"> Please check back in another time </p>
+    <h2 style="text-align: center;">Writing</h2>
+    <div class="blog-post">
+      <p class="blog-date">May 13th, 2026</p>
+      <p class="blog-title"><a class="blog-title-link" href="/writing/2026-06-13.html">Your sexuality is your choice</a></p>
+      <p class="blog-description">A reflection on the death of 1980's feminist philosophy and a subsequent attempt to resusitate the dead.</p>
+    </div>
   </main>
 
   <div class="page-footer">
