@@ -114,6 +114,8 @@
       margin: 0;
     }
     .link-to-thought {
+      display: block;
+      margin: 0 50px;
       text-decoration: none;
       color:#acd79c;
     }
@@ -121,12 +123,13 @@
       color: #d4efca;
     }
     .list-of-thoughts {
-      list-style-type:circle);
-      list-style-type:circle;
-      margin: 0 0 0 100px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
       display: flex;
-      text-align: left;
+      flex-direction: column;
       gap: 0.5rem;
+      text-align: left;
     }
   </style>
 </head>
@@ -158,14 +161,10 @@
 EDITS GO HERE
 
 -->
-  <ul class="list-of-thoughts" style="list-style-type:none;">
-    <p><b>></b><a class="link-to-thought" href="/thoughts/reading-list.html"> Reading list</a></p>
-  <h3 style="margin: 0 0 0 125px">Lists</h3>
-  <ul class="list-of-thoughts" style="list-style-type:none;">
-    <p><b>></b><a class="link-to-thought" href="/thoughts/reading-list.html"> Reading list</a></p>
-    <p><b>></b><a class="link-to-thought" href="/thoughts/watch-list.html"> Watch list</a></p>
-    <p><b>></b><a class="link-to-thought" href="/thoughts/music-list.html"> Music list</a></p>
-  </ul>
+  <ul class="list-of-thoughts">
+    <li><a class="link-to-thought" href="/thoughts/reading-list.html"><b>></b> Reading list</a></li>
+    <li><a class="link-to-thought" href="/thoughts/watch-list.html"><b>></b> Watch list</a></li>
+    <li><a class="link-to-thought" href="/thoughts/music-list.html"><b>></b> Music list</a></li>
   </ul>
   </main>
 
